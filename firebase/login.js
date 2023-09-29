@@ -5,20 +5,8 @@ import { signInAnonymously } from "https://www.gstatic.com/firebasejs/10.3.1/fir
 
 const username = document.getElementById("username");
 const pass = document.getElementById("password");
-const loginBtn = document.getElementById("login-btn");
-const anonyBtn = document.getElementById("anonymous-btn")
-const handleLoginAnon = () => {
-  signInAnonymously(auth)
-  .then(() => {
-    window.location = "./index.html"
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ...
-  });
-}
-
+const loginBtn = document.getElementById("btn");
+console.log('hi')
 const HandleLogin = () => {
   const email = username.value;
   const password = pass.value;
@@ -36,4 +24,3 @@ const HandleLogin = () => {
 };
 
 loginBtn.addEventListener("click", HandleLogin);
-anonyBtn.addEventListener("click", handleLoginAnon);

@@ -7,41 +7,40 @@
     <link rel="stylesheet" href="./register.css">
 </head>
 <body>
+    <body>
+        <script src="https://kit.fontawesome.com/bddc0f84b7.js" crossorigin="anonymous"></script>
+      </body>
+      <div class="login-box">
+        <h2>SignUp</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Name</label>
+          </div>
+          <div class="user-box">
+            <input type="email" name="" required="" id="username">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="" id="password">
+            <label>Password</label>
+          </div>
+          <a href="#" id="btn">Submit</a>
+        </form>
+        <div class="signup-option">
+          <h4>SignUp with</h4>
+          <div class="links">
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+          </div>
+          
+        </div>
+      </div>
     <script type="module" src="./firebase/register.js"></script>
-    <div class="container right-panel-active">
-        <!-- Sign Up -->
-        <div class="container__form container--signup">
-            <form action="#" class="form" id="form1">
-                <h2 class="form__title">Sign Up</h2>
-                <input type="text" placeholder="User" class="input" id="username" />
-                <input type="email" placeholder="Email" class="input" />
-                <input type="password" placeholder="Password" class="input" id="password"/>
-                <button class="btn" id="btn">Sign Up</button>
-            </form>
-        </div>
-    
-        <!-- Sign In -->
-        <div class="container__form container--signin">
-            <form action="#" class="form" id="form2">
-                <h2 class="form__title">Sign In</h2>
-                <input type="email" placeholder="Email" class="input" />
-                <input type="password" placeholder="Password" class="input" />
-                <a href="#" class="link">Forgot your password?</a>
-                <button class="btn">Sign In</button>
-            </form>
-        </div>
-    
-        <!-- Overlay -->
-        <div class="container__overlay">
-            <div class="overlay">
-                <div class="overlay__panel overlay--left">
-                    <button class="btn" id="signIn">Sign In</button>
-                </div>
-                <div class="overlay__panel overlay--right">
-                    <button class="btn" id="signUp">Sign Up</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
