@@ -23,3 +23,30 @@ const addProduct = async () => {
     products = [...products, newProduct];
     displayProducts();
   };
+  fetch('https://6520f6f1a4199548356cabf3.mockapi.io/courses', {
+  method: 'PUT', // or PATCH
+  headers: {'content-type':'application/json'},
+  body: JSON.stringify({completed: true})
+}).then(res => {
+  if (res.ok) {
+      return res.json();
+  }
+  // handle error
+}).then(task => {
+  // Do something with updated task
+}).catch(error => {
+  // handle error
+})
+
+fetch('https://6520f6f1a4199548356cabf3.mockapi.io/courses', {
+  method: 'DELETE',
+}).then(res => {
+  if (res.ok) {
+      return res.json();
+  }
+  // handle error
+}).then(task => {
+  // Do something with deleted task
+}).catch(error => {
+  // handle error
+})
