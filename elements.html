@@ -78,18 +78,11 @@
           <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
             <li><a href="index.html">Home</a></li>
             <li class="has-children active">
-              <a href="#">Dropdown</a>
+              <a href="#">Courses</a>
               <ul class="dropdown">
-                <li class="active"><a href="elements.html">Elements</a></li>
-                <li class="has-children">
-                  <a href="#">Menu Two</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Sub Menu One</a></li>
-                    <li><a href="#">Sub Menu Two</a></li>
-                    <li><a href="#">Sub Menu Three</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Menu Three</a></li>
+                <li class="active"><a href="elements.html">Buy our courses</a></li>
+                <li><a href="courses.html">About our courses</a></li>
+
               </ul>
             </li>
             <li><a href="staff.html">Our Staff</a></li>
@@ -99,7 +92,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
 
-          <a href="#" class="btn-book btn btn-secondary btn-sm menu-absolute">Enroll Now</a>
+          <a href="register.html" class="btn-book btn btn-secondary btn-sm menu-absolute">Enroll Now</a>
 
           <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
             <span></span>
@@ -117,11 +110,11 @@
         <div class="col-12">
           <div class="row justify-content-center ">
             <div class="col-lg-6 text-center ">
-              <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Elements</h1>
+              <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Buy our courses.</h1>
               <div class="mb-5 text-white desc mx-auto" data-aos="fade-up" data-aos-delay="200">
               </div>
 
-              <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-secondary">Explore courses</a></p>
+              <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="courses.html" class="btn btn-secondary">Explore courses</a></p>
 
             </div>
 
@@ -255,33 +248,37 @@
                 <input type="password" class="form-control" id="password">
               </div>
               <div class="form-group">
-                <label class="" for="message">Message</label>
+                <label class="" for="message">Extra information that you want us to know (optional)</label>
                 <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
               </div>
               <div class="form-group">
                 <label class="" for="select">Select</label>
 
                 <select name="" id="select" class="custom-select">
-                  <option value="">Course 1 $98</option>
-                  <option value="">Course 2 $98</option>
-                  <option value="">Course 3 $98</option>
-                  <option value="">Course 4 $98</option>
-                  <option value="">Course 5 $98</option>
-                  <option value="">Course 6 $98</option>
-                  <option value="">Course 7 $98</option>
+                  <option value="">Getting ready for grade 1 $98</option>
+                  <option value="">Getting ready for secondary school $98</option>
+                  <option value="">Getting ready for high school $98</option>
+                  <option value="">Getting ready for college / university $98</option>
+                  <option value="">Driving course $98</option>
+                  <option value="">English course $98</option>
+                  <option value="">Math course $98</option>
+                  <option value="">Science course $98</option>
+
                   
                 </select>
 
 
               </div>
-              <div class="form-group">
-                <label class="control control--checkbox">
-                  <span class="caption">Custom checkbox</span>
-                  <input type="checkbox" checked="checked" />
-                  <div class="control__indicator"></div>
-                </label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+
+              <button id="sub" type="submit" class="btn btn-primary" onclick="tyfp()">Submit</button>
+              <script>
+                a = document.getElementById("sub");
+                function tyfp(){
+                  alert("Thank you for your purchase!")
+                  
+                }
+                a.addEventListener(onclick, tyfp)
+                </script>
             </form>
           </div>
 
@@ -399,10 +396,10 @@
             <h3>Contact</h3>
             <address>43 Raymouth Rd. Baltemoer, London 3910</address>
             <ul class="list-unstyled links mb-4">
+              <li><a href="tel://11234567890">+840764484395</a></li>
               <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-              <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-              <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
-            </ul>
+              <li><a href="mailto:29anhv@alice-smith.edu.my">29anhv@alice-smith.edu.my</a></li>
+            </ul> 
           </div> <!-- /.widget -->
         </div> <!-- /.col-lg-3 -->
 
