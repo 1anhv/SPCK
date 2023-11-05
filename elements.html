@@ -252,20 +252,28 @@
                 <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
               </div>
               <div class="form-group">
-                <label class="" for="select">Select</label>
+                <button class="" for="select" id="rc">Reset cart</button>
+                <h1>Your cart:</h1>
 
-                <select name="" id="select" class="custom-select">
-                  <option value="">Getting ready for grade 1 $98</option>
-                  <option value="">Getting ready for secondary school $98</option>
-                  <option value="">Getting ready for high school $98</option>
-                  <option value="">Getting ready for college / university $98</option>
-                  <option value="">Driving course $98</option>
-                  <option value="">English course $98</option>
-                  <option value="">Math course $98</option>
-                  <option value="">Science course $98</option>
+                <div id="box">
+                  <template id="course-temp">
+                      <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                          <div class="col-12">
+                            <div class="row justify-content-center ">
+                              <div class="col-lg-6 text-center ">
 
-                  
-                </select>
+                                <h5 class="mb-4 text-black" id="course-price">It's empty! </h5>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </template>
+                </div>
+                <h2 id="totals">Your total: $0</h2>
 
 
               </div>
@@ -430,6 +438,7 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/elements.js"></script>
 
   </body>
 

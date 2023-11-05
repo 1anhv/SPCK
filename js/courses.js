@@ -3,10 +3,7 @@ let cart =[];
 
 const boxElm = document.getElementById("box");
 const courseTemp = document.getElementById('course-temp');
-const btn = document.getElementById('btn')
-const arsen = () => {
-  cart.push(todo)
-}
+
 const renderTodoList = () => {
   boxElm.innerHTML = "";
   products.forEach((todo) => {
@@ -17,6 +14,12 @@ const renderTodoList = () => {
     courseItem.getElementById('course-NOL').textContent = todo.Numberoflessons
     courseItem.getElementById('COL').textContent = todo.Timeforeachlesson
     courseItem.getElementById('img').style.backgroundImage = `url(${todo.img})`; 
+    courseItem.getElementById('btn').addEventListener("click", () => {
+      cart.push(todo)
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+
+    })
     boxElm.appendChild(courseItem);
 
   });
@@ -35,3 +38,4 @@ const getproducts = () => {
     });
 };
 getproducts();
+
