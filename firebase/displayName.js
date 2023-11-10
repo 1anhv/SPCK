@@ -8,7 +8,5 @@ onAuthStateChanged(auth, (user) => {
       const uid = user.uid;
       console.log(user.email)
         welcomeText.textContent = "welcome" + " " + user.email;
-    } else {
-        window.location = './login.html'
-    }
+    } 
   });
