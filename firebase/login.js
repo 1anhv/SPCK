@@ -6,8 +6,11 @@ import { signInAnonymously } from "https://www.gstatic.com/firebasejs/10.3.1/fir
 const username = document.getElementById("username");
 const pass = document.getElementById("password");
 const loginBtn = document.getElementById("btn");
+const loginForm = document.getElementsByClassName("form");
+
 console.log('hi')
-const HandleLogin = () => {
+const HandleLogin = (e) => {
+  e.preventDefault();
   const email = username.value;
   const password = pass.value;
   signInWithEmailAndPassword(auth, email, password)
@@ -24,3 +27,4 @@ const HandleLogin = () => {
 };
 
 loginBtn.addEventListener("click", HandleLogin);
+loginForm.addEventListener("submit", HandleLogin);

@@ -3,7 +3,8 @@ import { signOut } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth
 
 const logoutbtn = document.getElementById("Logout")
 
-const logOut = () =>{
+const logOut = (e) =>{
+    e.preventDefault();
     signOut(auth).then(() => {
     alert("log out succesful")
     window.location = './login.html'

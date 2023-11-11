@@ -5,8 +5,10 @@ import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebase
 const user = document.getElementById("username");
 const pass = document.getElementById("password");
 const registerBtn = document.getElementById("btn");
+const registerForm = document.getElementById("form");
 
-const handleRegister = () => {
+const handleRegister = (e) => {
+  e.preventDefault()
   const email = user.value;
   const password = pass.value;
   createUserWithEmailAndPassword(auth, email, password)
@@ -24,3 +26,4 @@ const handleRegister = () => {
 };
 
 registerBtn.addEventListener("click", handleRegister);
+registerForm.addEventListener("submit", handleRegister)
