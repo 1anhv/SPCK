@@ -15,6 +15,7 @@ const renderTodoList = () => {
     courseItem.getElementById('COL').textContent = todo.Timeforeachlesson
     courseItem.getElementById('img').style.backgroundImage = `url(${todo.img})`; 
     courseItem.getElementById('btn').addEventListener("click", () => {
+      alert("Course added to cart!")
       cart.push(todo)
       localStorage.setItem("cart", JSON.stringify(cart));
 
