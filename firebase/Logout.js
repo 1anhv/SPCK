@@ -7,7 +7,7 @@ const logOut = (e) =>{
     e.preventDefault();
     signOut(auth).then(() => {
     alert("log out succesful")
-    window.location = './login.html'
+    window.location = './register.html'
 
     }).catch((error) => {
     alert("An error occured")
